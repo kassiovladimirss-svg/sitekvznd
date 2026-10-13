@@ -1,146 +1,110 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta lang="pt-br">
+        <meta charset="utf-8">
+        <title>Plano Vermelho</title>
+    </head>
+
+
+     <body style="background: url(blue: .jpg;;);"> 
+   <nav class="navbar"> 
+    <ul style="color: white;"> 
+            <li> <a href="proj.html">Happy Patinhas🐶</a></li>
+            <li> <a href="cap1.html">Sobre...</a></li>
+            <li> <a href="cap2.html">Brinquedos</a></li>
+            <li> <a href="cap3.html">Alimentação</a></li>
+            <li> <a href="cap4.html">Adoção</a></li>
+        </ul>
+        </nav>
+
+<center>
+   <tr>  
+   <h1><p style="color: rgb(252, 252, 252);" id="p1">Seja Bem-Vindo ao Happy Patinhas🐶</p></h1>
+     </td></tr>
+
+</center>
+
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pet Feliz: produtos e cuidados para seu pet.">
-  <title>Pet Feliz | Pet Shop</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Patinhas 🐾</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 50px 20px;
+            color: #5c3b45;
+        }
+
+        .container {
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px #e8b8c8;
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .destaque {
+            color: #ff69b4;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #ff69b4;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="container">
+        <h1>🐾 Happy Patinhas 🐾</h1>
 
-  <header class="header">
-    <a href="#inicio" class="logo">🐾 Pet Feliz</a>
+        <h2>Amor, carinho e cuidado para seu pet!</h2>
 
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
-
-    <button class="cart-button" onclick="mostrarCarrinho()">
-      🛒 Carrinho (<span id="cart-count">0</span>)
-    </button>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-content">
-        <span class="tag">AMOR EM CADA PATINHA</span>
-        <h1>Seu melhor amigo merece o melhor!</h1>
         <p>
-          Encontre rações, brinquedos, acessórios e
-          cuidados especiais para seu companheiro.
+            Bem-vindos à <strong>Happy Patinhas</strong>,
+            o lugar onde o amor pelos animais vem em primeiro lugar!
         </p>
-        <a href="#produtos" class="button">Ver produtos</a>
-      </div>
 
-      <img
-        src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=900&q=85"
-        alt="Cachorro feliz"
-        class="hero-image"
-      >
-    </section>
+        <p>
+            Oferecemos produtos de qualidade, rações,
+            brinquedos e acessórios para deixar seu melhor
+            amigo feliz e saudável.
+        </p>
 
-    <section class="section" id="produtos">
-      <div class="section-title">
-        <span>NOSSA LOJA</span>
-        <h2>Produtos para seu pet</h2>
-        <p>Qualidade e carinho em cada escolha.</p>
-      </div>
+        <p>
+            Aqui, cada patinha importa e cada animal
+            é tratado com muito carinho. ❤️
+        </p>
 
-      <div class="products">
-        <article class="product">
-          <img
-            src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=600&q=80"
-            alt="Alimento para animais"
-          >
-          <h3>Ração Premium</h3>
-          <p>Nutrição para seu melhor amigo.</p>
-          <strong>R$ 89,90</strong>
-          <button class="button" onclick="adicionarProduto('Ração Premium', 89.90)">
-            Adicionar ao carrinho
-          </button>
-        </article>
+        <p class="destaque">
+            Venha conhecer a Happy Patinhas!
+        </p>
 
-        <article class="product">
-          <img
-            src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?auto=format&fit=crop&w=600&q=80"
-            alt="Gato de estimação"
-          >
-          <h3>Kit para Gatos</h3>
-          <p>Conforto e diversão para felinos.</p>
-          <strong>R$ 59,90</strong>
-          <button class="button" onclick="adicionarProduto('Kit para Gatos', 59.90)">
-            Adicionar ao carrinho
-          </button>
-        </article>
-
-        <article class="product">
-          <img
-            src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=600&q=80"
-            alt="Cachorro brincando"
-          >
-          <h3>Brinquedo Pet</h3>
-          <p>Mais alegria para a rotina do seu pet.</p>
-          <strong>R$ 29,90</strong>
-          <button class="button" onclick="adicionarProduto('Brinquedo Pet', 29.90)">
-            Adicionar ao carrinho
-          </button>
-        </article>
-      </div>
-    </section>
-
-    <section class="section services" id="servicos">
-      <div class="section-title">
-        <span>CUIDADO ESPECIAL</span>
-        <h2>Nossos serviços</h2>
-        <p>Tudo para manter seu pet feliz e saudável.</p>
-      </div>
-
-      <div class="service-grid">
-        <article class="service">
-          <div>🛁</div>
-          <h3>Banho e tosa</h3>
-          <p>Higiene, beleza e muito carinho.</p>
-        </article>
-
-        <article class="service">
-          <div>🩺</div>
-          <h3>Veterinário</h3>
-          <p>Cuidado com a saúde do seu companheiro.</p>
-        </article>
-
-        <article class="service">
-          <div>🦴</div>
-          <h3>Acessórios</h3>
-          <p>Produtos para todas as aventuras.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact section" id="contato">
-      <h2>Vamos cuidar do seu melhor amigo?</h2>
-      <p>Entre em contato e conheça nossos produtos e serviços.</p>
-      <a
-        href="https://wa.me/5500000000000"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="button"
-      >
-        Falar pelo WhatsApp
-      </a>
-    </section>
-  </main>
-
-  <footer>
-    <a href="#inicio" class="logo">🐾 Pet Feliz</a>
-    <p>Feito com amor pelos animais.</p>
-    <p>© <span id="year"></span> Pet Feliz. Todos os direitos reservados.</p>
-  </footer>
-
+        <footer>
+            🐶 Seu pet feliz, sua família feliz! 🐱
+        </footer>
+    </div>
 </body>
 </html>
+
+
+     </body>
