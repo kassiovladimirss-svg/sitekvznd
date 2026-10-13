@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta lang="pt-br">
+        <meta charset="utf-8">
+        <title>Plano Vermelho</title>
+    </head>
+
+
+     <body style="background: url(blue: ego23.jpg;;);"> 
+   <nav class="navbar"> 
+    <ul style="color: white;"> 
+            <li> <a href="proj.html">Happy Patinhas🐶</a></li>
+            <li> <a href="cap1.html">Sobre...</a></li>
+            <li> <a href="cap2.html">Brinquedos</a></li>
+            <li> <a href="cap3.html">Alimentação</a></li>
+            <li> <a href="cap4.html">Adoção</a></li>
+        </ul>
+        </nav>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alimentação | Happy Patinhas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff4f8;
+            color: #59414b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff75a8, #ffb6d0);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        .introducao {
+            max-width: 850px;
+            margin: 35px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .introducao h2 {
+            color: #e85d93;
+            margin-bottom: 12px;
+            font-size: 29px;
+        }
+
+        .catalogo {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .produto {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px #eacbd7;
+            transition: transform 0.3s;
+        }
+
+        .produto:hover {
+            transform: translateY(-5px);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 230px;
+            object-fit: contain;
+            display: block;
+            padding: 10px;
+            background: #fff;
+        }
+
+        .informacoes {
+            padding: 20px;
+        }
+
+        .tipo {
+            display: inline-block;
+            color: #c94d7e;
+            background: #fff0f6;
+            border-radius: 15px;
+            padding: 4px 10px;
+            font-size: 12px;
+        }
+
+        .informacoes h3 {
+            color: #df578b;
+            margin: 12px 0 8px;
+        }
+
+        .informacoes p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .preco {
+            color: #bd3973;
+            font-size: 23px !important;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        .secao {
+            background: white;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 28px;
+            border-radius: 18px;
+            box-shadow: 0 4px 14px #eacbd7;
+        }
+
+        .secao h2 {
+            color: #e85d93;
+            margin-bottom: 12px;
+        }
+
+        .secao ul {
+            padding-left: 22px;
+        }
+
+        .secao li {
+            margin-bottom: 8px;
+        }
+
+        .aviso {
+            background: #fff0f6;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        .final {
+            background: #ffe3ee;
+            color: #a63d6b;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        footer {
+            background: #e875a2;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .catalogo {
+                padding: 15px;
+                gap: 20px;
+            }
+
+            .secao {
+                margin: 20px 15px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐾 Happy Patinhas 🐾</h1>
+    <p>Alimentação, saúde e carinho em cada refeição!</p>
+</header>
+
+<section class="introducao">
+    <h2>🥣 Catálogo de Alimentação</h2>
+
+    <p>
+        Na Happy Patinhas, sabemos que a alimentação é
+        essencial para o bem-estar dos nossos amigos.
+        Por isso, nosso catálogo reúne opções de rações,
+        alimentos úmidos e petiscos para cães e gatos.
+    </p>
+
+    <p>
+        Cada animal tem necessidades diferentes.
+        A escolha do alimento deve considerar sua idade,
+        seu porte, seu estilo de vida e suas necessidades
+        nutricionais.
+    </p>
+</section>
+
+<main class="catalogo">
+
+    <article class="produto">
+        <img
+            src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=700&q=85"
+            alt="Cão próximo de sua alimentação"
+            loading="lazy"
+        >
+        <div class="informacoes">
+            <span class="tipo">Cães</span>
+            <h3>Ração para Cães Adultos</h3>
+            <p>
+                Alimento completo para a rotina de cães adultos.
+                A formulação deve atender às necessidades
+                nutricionais de cada animal.
+            </p>
+            <p><strong>Apresentação:</strong> pacote de 3 kg.</p>
+            <p class="preco">R$ 49,90</p>
+        </div>
+    </article>
+
+    <article class="produto">
+        <img
+            src="https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?auto=format&fit=crop&w=700&q=85"
+            alt="Cachorro comendo sua refeição"
+            loading="lazy"
+        >
+        <div class="informacoes">
+            <span class="tipo">Cães</span>
+            <h3>Ração para Filhotes</h3>
+            <p>
+                Opção de alimentação desenvolvida para acompanhar
+                a fase de crescimento dos cães filhotes.
+            </p>
+            <p><strong>Apresentação:</strong> pacote de 1 kg.</p>
+            <p class="preco">R$ 29,90</p>
+        </div>
+    </article>
+
+    <article class="produto">
+        <img
+            src="https://images.unsplash.com/photo-1582798358481-d199fb7347bb?auto=format&fit=crop&w=700&q=85"
+            alt="Gato doméstico"
+            loading="lazy"
+        >
+        <div class="informacoes">
+            <span class="tipo">Gatos</span>
+            <h3>Ração para Gatos Adultos</h3>
+            <p>
+                Alimento para a rotina dos gatos adultos,
+                considerando suas necessidades nutricionais
+                específicas.
+            </p>
+            <p><strong>Apresentação:</strong> pacote de 1 kg.</p>
+            <p class="preco">R$ 34,90</p>
+        </div>
+    </article>
+
+    <article class="produto">
+        <img
+            src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=85"
+            alt="Gato que precisa de cuidados e boa alimentação"
+            loading="lazy"
+        >
+        <div class="informacoes">
+            <span class="tipo">Gatos</span>
+            <h3>Ração para Filhotes de Gato</h3>
+            <p>
+                Opção formulada para a fase de crescimento,
+                quando os gatinhos precisam de nutrição adequada
+                ao seu desenvolvimento.
+            </p>
+            <p><strong>Apresentação:</strong> pacote de 1 kg.</p>
+            <p class="preco">R$ 37,90</p>
+        </div>
+    </article>
+
+    <article class="produto">
+        <img
+            src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=700&q=85"
+            alt="Cão durante a refeição"
+            loading="lazy"
+        >
+        <div class="informacoes">
+            <span class="tipo">Cães</span>
+            <h3>Petiscos para Cães</h3>
+            <p>
+                Pequenas recompensas para momentos de carinho
+                e treinamento. Devem ser oferecidas com moderação.
+            </p>
+            <p><strong>Apresentação:</strong> pacote de 100 g.</p>
+            <p class="preco">R$ 12,90</p>
+        </div>
+    </article>
+
+    <article class="produto">
+        <img
+            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=700&q=85"
+            alt="Gato doméstico para ilustrar alimentação felina"
+            loading="lazy"
+        >
+        <div class="informacoes">
+            <span class="tipo">Gatos</span>
+            <h3>Petiscos para Gatos</h3>
+            <p>
+                Recompensas próprias para felinos, ideais para
+                complementar momentos de interação com o tutor.
+            </p>
+            <p><strong>Apresentação:</strong> pacote de 60 g.</p>
+            <p class="preco">R$ 10,90</p>
+        </div>
+    </article>
+
+    <article class="produto">
+        <img
+            src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?auto=format&fit=crop&w=700&q=85"
+            alt="Cachorro recebendo cuidados"
+            loading="lazy"
+        >
+        <div class="informacoes">
+            <span class="tipo">Cães e gatos</span>
+            <h3>Alimento Úmido</h3>
+            <p>
+                Sachês e latinhas próprios para cães ou gatos,
+                conforme a espécie e a indicação do produto.
+            </p>
+            <p><strong>Apresentação:</strong> embalagem de 85 g.</p>
+            <p class="preco">R$ 6,90</p>
+        </div>
+    </article>
+
+    <article class="produto">
+        <img
+            src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=700&q=85"
+            alt="Alimentos em uma composição ilustrativa"
+            loading="lazy"
+        >
+        <div class="informacoes">
+            <span class="tipo">Cães e gatos</span>
+            <h3>Comedouro para Refeições</h3>
+            <p>
+                Acessório para servir o alimento de maneira
+                organizada. Escolha um tamanho adequado ao pet
+                e mantenha o recipiente limpo.
+            </p>
+            <p><strong>Material:</strong> modelo conforme disponibilidade.</p>
+            <p class="preco">R$ 19,90</p>
+        </div>
+    </article>
+
+</main>
+
+<section class="secao">
+    <h2>❤️ Por que cuidar da alimentação?</h2>
+
+    <ul>
+        <li>Ajuda a fornecer os nutrientes necessários ao organismo.</li>
+        <li>Contribui para o crescimento e a manutenção da saúde.</li>
+        <li>Auxilia na manutenção da energia para as atividades diárias.</li>
+        <li>Permite adaptar a dieta à fase de vida do animal.</li>
+        <li>Favorece uma rotina de cuidados e bem-estar.</li>
+    </ul>
+</section>
+
+<section class="secao">
+    <h2>🥣 Dicas para uma alimentação adequada</h2>
+
+    <ul>
+        <li>Escolha alimentos específicos para cães ou gatos.</li>
+        <li>Confira as orientações de porção na embalagem.</li>
+        <li>Mantenha água limpa e fresca sempre disponível.</li>
+        <li>Armazene os alimentos conforme as instruções do fabricante.</li>
+        <li>Faça mudanças na alimentação de forma gradual, quando indicado.</li>
+        <li>Procure um médico-veterinário para orientações individuais.</li>
+    </ul>
+
+    <p class="aviso">
+        <strong>Importante:</strong> os alimentos devem ser adequados
+        à espécie e às necessidades do animal. Não ofereça chocolate,
+        cebola, alho ou outros alimentos potencialmente tóxicos.
+    </p>
+</section>
+
+<section class="secao">
+    <h2>🐾 Nosso compromisso</h2>
+
+    <p>
+        Na Happy Patinhas, queremos ajudar cada tutor a encontrar
+        opções de alimentação para cuidar de seu companheiro
+        com carinho e responsabilidade.
+    </p>
+
+    <p>
+        Acreditamos que cada refeição é uma oportunidade de
+        demonstrar amor. Por isso, valorizamos a informação,
+        a qualidade e o cuidado com todos os pets.
+    </p>
+</section>
+
+<section class="final">
+    <h2>🐶🐱 Amor em cada refeição!</h2>
+    <p>
+        Happy Patinhas: cuidado, carinho e felicidade
+        para quem faz parte da nossa família.
+    </p>
+</section>
+
+<footer>
+    <p><strong>🐾 Happy Patinhas 🐾</strong></p>
+    <p>Alimentação e carinho para seu melhor amigo.</p>
+    <p>© 2026 Happy Patinhas. Todos os direitos reservados.</p>
+    <p>Preços ilustrativos, sujeitos a alteração.</p>
+</footer>
+
+</body>
+</html>

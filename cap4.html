@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adoção | Happy Patinhas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff4f8;
+            color: #59414b;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff75a8, #ffb6d0);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .introducao {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 22px;
+            text-align: center;
+        }
+
+        .introducao h2 {
+            color: #e85d93;
+            font-size: 29px;
+            margin-bottom: 15px;
+        }
+
+        .catalogo {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .animal {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px #eacbd7;
+            transition: transform 0.3s;
+        }
+
+        .animal:hover {
+            transform: translateY(-5px);
+        }
+
+        .animal img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .informacoes {
+            padding: 22px;
+        }
+
+        .informacoes h3 {
+            color: #df578b;
+            font-size: 23px;
+            margin-bottom: 8px;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            background: #fff0f6;
+            color: #c94d7e;
+            border-radius: 15px;
+            padding: 4px 12px;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .informacoes p {
+            margin-bottom: 10px;
+        }
+
+        .secao {
+            background: white;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 4px 14px #eacbd7;
+        }
+
+        .secao h2 {
+            color: #e85d93;
+            margin-bottom: 15px;
+        }
+
+        .secao h3 {
+            color: #bd537e;
+            margin: 18px 0 8px;
+        }
+
+        .secao ul,
+        .secao ol {
+            padding-left: 25px;
+        }
+
+        .secao li {
+            margin-bottom: 8px;
+        }
+
+        .destaque {
+            background: #fff0f6;
+            padding: 18px;
+            border-radius: 12px;
+            margin-top: 18px;
+        }
+
+        .final {
+            background: #ffe3ee;
+            color: #a63d6b;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .final h2 {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: #e875a2;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .catalogo {
+                padding: 15px;
+                gap: 20px;
+            }
+
+            .secao {
+                margin: 20px 15px;
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐾 Happy Patinhas 🐾</h1>
+    <p>Adote amor. Ganhe um melhor amigo!</p>
+</header>
+
+<section class="introducao">
+    <h2>🏡 Encontre um Amigo para a Vida</h2>
+
+    <p>
+        Na Happy Patinhas, acreditamos que todo animal merece
+        carinho, respeito, proteção e um lar seguro.
+        A adoção responsável é uma oportunidade de transformar
+        a vida de um animal e também a de uma família.
+    </p>
+
+    <p>
+        Cães e gatos podem oferecer companheirismo, alegria
+        e momentos inesquecíveis. Antes de adotar, é importante
+        conhecer as necessidades do animal e assumir o compromisso
+        de cuidar dele durante toda a sua vida.
+    </p>
+</section>
+
+<main class="catalogo">
+
+    <article class="animal">
+        <img
+            src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=85"
+            alt="Cachorro dourado olhando para a câmera"
+            loading="lazy"
+        >
+
+        <div class="informacoes">
+            <span class="etiqueta">Perfil ilustrativo</span>
+            <h3>Thor 🐶</h3>
+
+            <p><strong>Espécie:</strong> Cão</p>
+            <p><strong>Idade:</strong> Adulto, idade fictícia</p>
+            <p><strong>Personalidade:</strong> Companheiro e curioso.</p>
+
+            <p>
+                Thor representa os cães que procuram uma família
+                disposta a oferecer passeios, brincadeiras,
+                cuidados e muito carinho.
+            </p>
+        </div>
+    </article>
+
+    <article class="animal">
+        <img
+            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=85"
+            alt="Gato doméstico olhando para a câmera"
+            loading="lazy"
+        >
+
+        <div class="informacoes">
+            <span class="etiqueta">Perfil ilustrativo</span>
+            <h3>Mel 🐱</h3>
+
+            <p><strong>Espécie:</strong> Gata</p>
+            <p><strong>Idade:</strong> Adulta, idade fictícia</p>
+            <p><strong>Personalidade:</strong> Curiosa e tranquila.</p>
+
+            <p>
+                Mel representa os gatos que precisam de um lar
+                protegido, ambientes enriquecidos, alimentação
+                adequada e uma família paciente e amorosa.
+            </p>
+        </div>
+    </article>
+
+    <article class="animal">
+        <img
+            src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=85"
+            alt="Cachorro de aparência alegre"
+            loading="lazy"
+        >
+
+        <div class="informacoes">
+            <span class="etiqueta">Perfil ilustrativo</span>
+            <h3>Bob 🐕</h3>
+
+            <p><strong>Espécie:</strong> Cão</p>
+            <p><strong>Idade:</strong> Jovem, idade fictícia</p>
+            <p><strong>Personalidade:</strong> Ativo e brincalhão.</p>
+
+            <p>
+                Bob representa os cães que adoram explorar,
+                aprender e brincar. Sua futura família deve
+                estar preparada para oferecer atividades
+                e educação positiva.
+            </p>
+        </div>
+    </article>
+
+    <article class="animal">
+        <img
+            src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=85"
+            alt="Gato doméstico deitado"
+            loading="lazy"
+        >
+
+        <div class="informacoes">
+            <span class="etiqueta">Perfil ilustrativo</span>
+            <h3>Luna 🐈</h3>
+
+            <p><strong>Espécie:</strong> Gata</p>
+            <p><strong>Idade:</strong> Jovem, idade fictícia</p>
+            <p><strong>Personalidade:</strong> Atenta e exploradora.</p>
+
+            <p>
+                Luna representa os felinos que precisam de
+                segurança, brinquedos, locais para descansar
+                e estímulos para explorar o ambiente.
+            </p>
+        </div>
+    </article>
+
+</main>
+
+<section class="secao">
+    <h2>💗 Por que adotar?</h2>
+
+    <ul>
+        <li>Você oferece a um animal a oportunidade de ter um lar.</li>
+        <li>Constrói uma relação de amizade e companheirismo.</li>
+        <li>Incentiva a proteção e o respeito aos animais.</li>
+        <li>Ajuda a conscientizar sobre o abandono animal.</li>
+        <li>Permite que um novo integrante faça parte da família.</li>
+    </ul>
+
+    <div class="destaque">
+        <strong>
+            Adotar é um compromisso para toda a vida.
+        </strong>
+        O animal precisa de cuidados, atenção, segurança,
+        alimentação adequada e acompanhamento veterinário.
+    </div>
+</section>
+
+<section class="secao">
+    <h2>🏡 Como funciona a adoção responsável?</h2>
+
+    <ol>
+        <li>
+            <strong>Conheça o animal:</strong>
+            procure informações sobre sua idade, comportamento,
+            saúde e necessidades.
+        </li>
+
+        <li>
+            <strong>Prepare sua casa:</strong>
+            proteja janelas, portões e outros espaços conforme
+            as necessidades do animal.
+        </li>
+
+        <li>
+            <strong>Avalie sua rotina:</strong>
+            considere o tempo disponível, os custos e a
+            responsabilidade de cuidar de um pet.
+        </li>
+
+        <li>
+            <strong>Converse com a organização responsável:</strong>
+            conheça os critérios de adoção e os procedimentos
+            necessários.
+        </li>
+
+        <li>
+            <strong>Prepare a chegada:</strong>
+            providencie alimentação, local de descanso,
+            identificação e os cuidados veterinários necessários.
+        </li>
+
+        <li>
+            <strong>Respeite a adaptação:</strong>
+            ofereça paciência, tranquilidade e carinho
+            para que o animal se acostume ao novo lar.
+        </li>
+    </ol>
+</section>
+
+<section class="secao">
+    <h2>🐶 Preparando a casa para um cão</h2>
+
+    <ul>
+        <li>Providencie coleira, guia e identificação.</li>
+        <li>Escolha uma caminha confortável.</li>
+        <li>Tenha comedouro e bebedouro com água fresca.</li>
+        <li>Ofereça brinquedos adequados ao porte do cão.</li>
+        <li>Organize passeios, atividades e acompanhamento veterinário.</li>
+    </ul>
+
+    <h3>🐱 Preparando a casa para um gato</h3>
+
+    <ul>
+        <li>Instale telas de proteção adequadas nas janelas.</li>
+        <li>Prepare uma caixa de areia em local tranquilo.</li>
+        <li>Disponibilize arranhadores e locais para descanso.</li>
+        <li>Ofereça esconderijos e brinquedos apropriados.</li>
+        <li>Mantenha água fresca e alimentação adequada.</li>
+    </ul>
+</section>
+
+<section class="secao">
+    <h2>❤️ Nosso compromisso com a adoção</h2>
+
+    <p>
+        A Happy Patinhas apoia a adoção responsável e acredita
+        que todos os animais merecem viver com dignidade.
+        Cada adoção deve ser realizada com planejamento,
+        respeito e compromisso com o bem-estar animal.
+    </p>
+
+    <p>
+        Esta página apresenta exemplos educativos de perfis
+        de animais. Para conhecer animais realmente disponíveis,
+        entre em contato com abrigos, protetores independentes
+        ou organizações de proteção animal da sua região.
+    </p>
+
+    <div class="destaque">
+        <strong>Importante:</strong> as fotos são ilustrativas.
+        Thor, Mel, Bob e Luna são personagens fictícios para
+        demonstração do catálogo, e não animais confirmados
+        para adoção pela Happy Patinhas.
+    </div>
+</section>
+
+<section class="final">
+    <h2>🐾 Todo amor merece um lar!</h2>
+
+    <p>
+        Adotar é abrir o coração para uma amizade
+        cheia de carinho, respeito e companheirismo.
+    </p>
+
+    <p>
+        <strong>Happy Patinhas — mudando vidas, uma patinha de cada vez! 💕</strong>
+    </p>
+</section>
+
+<footer>
+    <p><strong>🐾 Happy Patinhas 🐾</strong></p>
+    <p>Amor, respeito e cuidado com todos os animais.</p>
+    <p>© 2026 Happy Patinhas. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
